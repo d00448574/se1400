@@ -60,4 +60,17 @@ body {
   h3 {
     color: #003058
   }
+
+  #homehero{
+    image
+    height: 300px;
+    background-size: 100%, 100%;
+    background-position: center;
+  }
+
+  #studenthero{
+    height: 300px;
+    background-size: 100%, 100%;
+    background-position: center;
+   }
   
