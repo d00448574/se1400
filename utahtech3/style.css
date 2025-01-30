@@ -15,7 +15,15 @@ body {
   header h1 {
     line-height: 140%;
     padding: 0.5rem;
+    background-image: url('utahtechimages/utahtechlogo.svg');
+    background-position: right center; 
+    background-repeat: no-repeat;
+    padding-left: 1em;  
+    background-origin: content-box; 
+    margin-bottom: 0; 
   }
+    
+  
   
   nav {
     font-weight: bold;
@@ -62,15 +70,12 @@ body {
   }
 
   #homehero{
-    image
-    height: 300px;
-    background-size: 100%, 100%;
-    background-position: center;
   }
 
   #studenthero{
-    height: 300px;
-    background-size: 100%, 100%;
-    background-position: center;
    }
+
+   #facultyhero {
+  }
+  
   
