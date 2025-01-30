@@ -2,6 +2,8 @@ body {
     background-color: #FFFFFF;
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
+    background-image: linear-gradient(#eeeeee,#FFFFFF);
+    background-attachment: fixed;
   }
   
   header {
