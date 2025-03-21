@@ -34,8 +34,6 @@ header h1 {
   margin: 0;
 }
 
-
-
 nav {
   font-weight: bold;
   background-color: #424242;
@@ -78,12 +76,11 @@ footer {
 }
 
 h3 {
-  color: #003058
+  color: #003058;
 }
 
-#homehero {
+#homehero, #studenthero, #facultyhero, #alumnihero {
   height: 300px;
-  background-image: url('utahtechimages/homehero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,26 +88,8 @@ h3 {
   grid-column: 2 / -2;
 }
 
-
-#studenthero {
-  height: 300px;
-  background-image: url('utahtechimages/studenthero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-row: 3 / 4;
-  grid-column: 2 / -2;
-}
-
-
-#facultyhero {
-  height: 300px;
-  background-image: url('utahtechimages/facultyhero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-row: 3 / 4;
-  grid-column: 2 / -2;
+#alumnihero {
+  background-image: url('utahtechimages/alumnihero.jpg');
 }
 
 nav a {
@@ -163,15 +142,40 @@ nav a:hover {
   grid-column: 1/-1;
 }
 
-#homehero, #studenthero, #facultyhero {
+#homehero, #studenthero, #facultyhero, #alumnihero {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
 }
 
-@media only screen and (max-width:110px) {
-  #wrapper {
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
-  }
+form {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 200px 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+input, textarea {
+  font-size: 1rem;
+  padding: 10px;
+  color: #666666;
+  background-color: #fafafa;
+  border: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+label {
+  padding: 10px;
+  text-align: right;
+}
+
+#mySubmit {
+  width: 10rem;
+  grid-column: 2 / 3;
 }
 
 @media only screen and (max-width:900px) {
@@ -185,7 +189,7 @@ nav a:hover {
     flex-flow: column nowrap;
   }
 
-  #homehero, #studenthero, #facultyhero {
+  #homehero, #studenthero, #facultyhero, #alumnihero {
     grid-row: 2/3;
     grid-column: 5/8;
     height:auto;
@@ -210,7 +214,7 @@ nav a:hover {
     grid-column: 1/-1;
   }
 
-  #homehero, #studenthero, #facultyhero {
+  #homehero, #studenthero, #facultyhero, #alumnihero {
     display:none;
   }
 }

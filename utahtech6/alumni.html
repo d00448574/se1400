@@ -26,22 +26,37 @@
         <main>
             <h2>Join Alumni Mailing List</h2>
             <h3>Request Alumni Newsletter</h3>
+
+            <!-- Paragraph above the form -->
+            <p>Required information is marked with an asterisk (*).</p>
+
             <form method="post" action="https://kearl.net/se1400/mail.php">
-                <label for="myFName">First Name:</label>
-                <input type="text" id="myFName" name="myFName"><br><br>
                 
-                <label for="myLName">Last Name:</label>
-                <input type="text" id="myLName" name="myLName"><br><br>
+                <!-- First Name -->
+                <label for="myFName"><span>*</span> First Name:</label>
+                <input type="text" id="myFName" name="myFName" required><br><br>
                 
-                <label for="myEmail">E-mail:</label>
-                <input type="email" id="myEmail" name="myEmail"><br><br>
+                <!-- Last Name -->
+                <label for="myLName"><span>*</span> Last Name:</label>
+                <input type="text" id="myLName" name="myLName" required><br><br>
                 
-                <label for="myPhone">Phone:</label>
-                <input type="tel" id="myPhone" name="myPhone"><br><br>
+                <!-- E-mail -->
+                <label for="myEmail"><span>*</span> E-mail:</label>
+                <input type="email" id="myEmail" name="myEmail" required><br><br>
                 
-                <label for="myComments">Comments:</label>
-                <textarea id="myComments" name="myComments" rows="2" cols="20"></textarea><br><br>
+                <!-- Phone -->
+                <label for="myPhone"><span>*</span> Phone:</label>
+                <input type="tel" id="myPhone" name="myPhone" required><br><br>
                 
+                <!-- Comments -->
+                <label for="myComments"><span>*</span> Comments:</label>
+                <textarea id="myComments" name="myComments" rows="2" cols="20" required></textarea><br><br>
+                
+                <!-- Graduation Date -->
+                <label for="myGradDate">Graduation Date:</label>
+                <input type="date" id="myGradDate" name="myGradDate"><br><br>
+
+                <!-- Submit Button -->
                 <input type="submit" id="mySubmit" value="Submit">
             </form>
         </main>
